@@ -1,0 +1,3 @@
+/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir
+/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/edit_cache.dir
