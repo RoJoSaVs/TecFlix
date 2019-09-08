@@ -103,6 +103,15 @@
 		<Unit filename="/home/ronny/CLionProjects/TecFlix/CSV/CSV_Reader.cpp">
 			<Option target="TecFlix"/>
 		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/HTML/Data.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/HTML/Data.h">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/HTML/HTML_Parser.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
 		<Unit filename="/home/ronny/CLionProjects/TecFlix/main.cpp">
 			<Option target="TecFlix"/>
 		</Unit>

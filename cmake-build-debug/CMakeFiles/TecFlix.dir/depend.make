@@ -3,8 +3,21 @@
 
 CMakeFiles/TecFlix.dir/CSV/CSV_Reader.cpp.o: ../CSV/CSV_Reader.cpp
 
+CMakeFiles/TecFlix.dir/HTML/Data.cpp.o: ../HTML/Data.cpp
+CMakeFiles/TecFlix.dir/HTML/Data.cpp.o: ../HTML/Data.h
+
+CMakeFiles/TecFlix.dir/HTML/HTML_Parser.cpp.o: ../HTML/HTML_Parser.cpp
+
 CMakeFiles/TecFlix.dir/main.cpp.o: ../CSV/CSV_Reader.cpp
 CMakeFiles/TecFlix.dir/main.cpp.o: ../main.cpp
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QFlags
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QSharedDataPointer
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QUrl
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -22,7 +35,9 @@ CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcon
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcryptographichash.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
@@ -76,6 +91,7 @@ CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvar
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
@@ -107,6 +123,21 @@ CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qtran
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QNetworkAccessManager
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QSslConfiguration
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QSslPreSharedKeyAuthenticator
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qabstractsocket.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qnetworkaccessmanager.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qnetworkrequest.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qssl.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qsslcertificate.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qsslconfiguration.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qsslerror.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qsslpresharedkeyauthenticator.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qsslsocket.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtcpsocket.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetwork-config.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPixmapItem
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene

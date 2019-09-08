@@ -1,9 +1,9 @@
 
-//        QWidget window;
-//        window.resize(1024, 650);
-//        window.showMaximized();
-//        window.setWindowTitle(
-//                QApplication::translate("toplevel", "TecFLix"));
+    //        QWidget window;
+    //        window.resize(1024, 650);
+    //        window.showMaximized();
+    //        window.setWindowTitle(
+    //                QApplication::translate("toplevel", "TecFLix"));
 
-//        QImage picture;
-//        picture.load("/home/ronny/CLionProjects/TecFlix/CSV/GohanCanva.jpg");
+    //        QImage picture;
+    //        picture.load("/home/ronny/CLionProjects/TecFlix/CSV/GohanCanva.jpg");

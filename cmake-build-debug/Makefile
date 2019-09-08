@@ -150,6 +150,60 @@ CSV/CSV_Reader.cpp.s:
 	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/CSV/CSV_Reader.cpp.s
 .PHONY : CSV/CSV_Reader.cpp.s
 
+HTML/Data.o: HTML/Data.cpp.o
+
+.PHONY : HTML/Data.o
+
+# target to build an object file
+HTML/Data.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/Data.cpp.o
+.PHONY : HTML/Data.cpp.o
+
+HTML/Data.i: HTML/Data.cpp.i
+
+.PHONY : HTML/Data.i
+
+# target to preprocess a source file
+HTML/Data.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/Data.cpp.i
+.PHONY : HTML/Data.cpp.i
+
+HTML/Data.s: HTML/Data.cpp.s
+
+.PHONY : HTML/Data.s
+
+# target to generate assembly for a file
+HTML/Data.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/Data.cpp.s
+.PHONY : HTML/Data.cpp.s
+
+HTML/HTML_Parser.o: HTML/HTML_Parser.cpp.o
+
+.PHONY : HTML/HTML_Parser.o
+
+# target to build an object file
+HTML/HTML_Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/HTML_Parser.cpp.o
+.PHONY : HTML/HTML_Parser.cpp.o
+
+HTML/HTML_Parser.i: HTML/HTML_Parser.cpp.i
+
+.PHONY : HTML/HTML_Parser.i
+
+# target to preprocess a source file
+HTML/HTML_Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/HTML_Parser.cpp.i
+.PHONY : HTML/HTML_Parser.cpp.i
+
+HTML/HTML_Parser.s: HTML/HTML_Parser.cpp.s
+
+.PHONY : HTML/HTML_Parser.s
+
+# target to generate assembly for a file
+HTML/HTML_Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/HTML_Parser.cpp.s
+.PHONY : HTML/HTML_Parser.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +243,12 @@ help:
 	@echo "... CSV/CSV_Reader.o"
 	@echo "... CSV/CSV_Reader.i"
 	@echo "... CSV/CSV_Reader.s"
+	@echo "... HTML/Data.o"
+	@echo "... HTML/Data.i"
+	@echo "... HTML/Data.s"
+	@echo "... HTML/HTML_Parser.o"
+	@echo "... HTML/HTML_Parser.i"
+	@echo "... HTML/HTML_Parser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
