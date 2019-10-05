@@ -1,47 +1,60 @@
-#include "CSV/CSV_Reader.cpp"
 #include <QApplication>
-#include <QtWidgets/QWidget>
-#include <QGraphicsScene>
-#include <QtWidgets/QGraphicsView>
-#include <QtWidgets/QGraphicsPixmapItem>
-#include <QUrl>
-#include <QtNetwork/QNetworkAccessManager>
-#include <QtNetwork/QNetworkRequest>
-#include <QtNetwork/QNetworkReply>
-#include <QImage>
+#include <QtGui>
+#include <QKeyEvent>
+#include <QWidget>
+#include <QGridLayout>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QLabel>
+#include "CSV/CSV_Reader.cpp"
+#include "HTML/Image_getter.h"
+#include "LinkedList/String_List.h"
+#include <QApplication>
+#include "GUI/windowGUI.h"
+#include <iostream>
+#include <QtWidgets/QScrollBar>
+#include <QtWidgets/QScrollArea>
 
 using namespace std;
+
 int main(int argc, char *argv[]) {
-//
-//
-//    read();
-//    QApplication app(argc, argv);
-//    QGraphicsScene scene;
-//    QGraphicsView view(&scene);
-//    QUrl url ("https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_UX182_CR0,0,182,268_AL_.jpg");
-//    QUrl url1 ("https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg");
-//    QImage image(url.toLocalFile());
-//    QGraphicsPixmapItem item(QPixmap(url.toLocalFile()));
-//    item.setScale(0.5);
-//    item.setPos(0,0);
-//    scene.addItem(&item);
-//    view.showMaximized();
-//
-//    return app.exec();
-    QApplication a(argc, argv);
+    QApplication app(argc, argv);
 
-    QUrl url ("https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_UX182_CR0,0,182,268_AL_.jpg");
-    QImage myImage;
+    windowGUI window;
+    window.setWindowTitle("TecFlix");
+    window.setGeometry(10,10,1150,700);
+    window.adjustSize();
+    window.show();
 
-    myImage.load(url.toLocalFile());
-//    myImage.load("/home/ronny/CLionProjects/TecFlix/CSV/GohanCanva.jpg");
-
-
-    QLabel myLabel;
-    myLabel.setPixmap(QPixmap::fromImage(myImage));
-
-    myLabel.show();
-
-    return a.exec();
+    return app.exec();
 }
+//    String_List *test = new String_List();
+//    Read(test, 1);
+//    Image_getter *dir = new Image_getter();
+//    String_Node *current;
+//    current = test->get_tail();
+//    while (current != nullptr) {
+//        dir->Img_getter(current->get_movieURL(), current->get_id());
+//        current = current->get_prev();
+//    }
+//    return 0;
+//}
+/**
+    QApplication app(argc, argv);
+    QWidget *window = new QWidget();
+
+    QGridLayout *layout = new QGridLayout;
+    for(int i=1; i<= 64; i++){
+        QPixmap pm("/home/ronny/CLionProjects/TecFlix/Pictures/img"+QString::number(i,10)+".jpg");
+        QLabel *lbl = new QLabel;
+        lbl->setPixmap(pm);
+        layout->addWidget(lbl,i,0,Qt::Alignment());
+    }
+    QScrollArea scrollArea;
+    window->setLayout(layout);
+    scrollArea.setWidget(window);
+    scrollArea.resize(400,600);
+    scrollArea.show();
+
+    return app.exec();
+
+}/***/

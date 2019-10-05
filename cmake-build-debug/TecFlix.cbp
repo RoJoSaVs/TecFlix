@@ -103,13 +103,67 @@
 		<Unit filename="/home/ronny/CLionProjects/TecFlix/CSV/CSV_Reader.cpp">
 			<Option target="TecFlix"/>
 		</Unit>
-		<Unit filename="/home/ronny/CLionProjects/TecFlix/HTML/Data.cpp">
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/GUI/windowGUI.cpp">
 			<Option target="TecFlix"/>
 		</Unit>
-		<Unit filename="/home/ronny/CLionProjects/TecFlix/HTML/Data.h">
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/GUI/windowGUI.h">
 			<Option target="TecFlix"/>
 		</Unit>
-		<Unit filename="/home/ronny/CLionProjects/TecFlix/HTML/HTML_Parser.cpp">
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/HTML/Image_getter.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/HTML/Image_getter.h">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/LinkedList/String_List.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/LinkedList/String_List.h">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/LinkedList/String_Node.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/LinkedList/String_Node.h">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/CSV_Reader.h">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/Data.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/Data.h">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/FileDownloader.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/FileDownloader.h">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/HTML_Parser.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/HTTPDownloader.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/HTTPDownloader.h">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/ImgDownloader.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/ImgDownloader.h">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/Iterator.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/List.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ronny/CLionProjects/TecFlix/Recycle_Bin/Node.cpp">
 			<Option target="TecFlix"/>
 		</Unit>
 		<Unit filename="/home/ronny/CLionProjects/TecFlix/main.cpp">

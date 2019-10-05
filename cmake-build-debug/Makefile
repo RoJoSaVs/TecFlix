@@ -150,59 +150,329 @@ CSV/CSV_Reader.cpp.s:
 	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/CSV/CSV_Reader.cpp.s
 .PHONY : CSV/CSV_Reader.cpp.s
 
-HTML/Data.o: HTML/Data.cpp.o
+GUI/windowGUI.o: GUI/windowGUI.cpp.o
 
-.PHONY : HTML/Data.o
-
-# target to build an object file
-HTML/Data.cpp.o:
-	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/Data.cpp.o
-.PHONY : HTML/Data.cpp.o
-
-HTML/Data.i: HTML/Data.cpp.i
-
-.PHONY : HTML/Data.i
-
-# target to preprocess a source file
-HTML/Data.cpp.i:
-	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/Data.cpp.i
-.PHONY : HTML/Data.cpp.i
-
-HTML/Data.s: HTML/Data.cpp.s
-
-.PHONY : HTML/Data.s
-
-# target to generate assembly for a file
-HTML/Data.cpp.s:
-	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/Data.cpp.s
-.PHONY : HTML/Data.cpp.s
-
-HTML/HTML_Parser.o: HTML/HTML_Parser.cpp.o
-
-.PHONY : HTML/HTML_Parser.o
+.PHONY : GUI/windowGUI.o
 
 # target to build an object file
-HTML/HTML_Parser.cpp.o:
-	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/HTML_Parser.cpp.o
-.PHONY : HTML/HTML_Parser.cpp.o
+GUI/windowGUI.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/GUI/windowGUI.cpp.o
+.PHONY : GUI/windowGUI.cpp.o
 
-HTML/HTML_Parser.i: HTML/HTML_Parser.cpp.i
+GUI/windowGUI.i: GUI/windowGUI.cpp.i
 
-.PHONY : HTML/HTML_Parser.i
+.PHONY : GUI/windowGUI.i
 
 # target to preprocess a source file
-HTML/HTML_Parser.cpp.i:
-	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/HTML_Parser.cpp.i
-.PHONY : HTML/HTML_Parser.cpp.i
+GUI/windowGUI.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/GUI/windowGUI.cpp.i
+.PHONY : GUI/windowGUI.cpp.i
 
-HTML/HTML_Parser.s: HTML/HTML_Parser.cpp.s
+GUI/windowGUI.s: GUI/windowGUI.cpp.s
 
-.PHONY : HTML/HTML_Parser.s
+.PHONY : GUI/windowGUI.s
 
 # target to generate assembly for a file
-HTML/HTML_Parser.cpp.s:
-	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/HTML_Parser.cpp.s
-.PHONY : HTML/HTML_Parser.cpp.s
+GUI/windowGUI.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/GUI/windowGUI.cpp.s
+.PHONY : GUI/windowGUI.cpp.s
+
+HTML/Image_getter.o: HTML/Image_getter.cpp.o
+
+.PHONY : HTML/Image_getter.o
+
+# target to build an object file
+HTML/Image_getter.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/Image_getter.cpp.o
+.PHONY : HTML/Image_getter.cpp.o
+
+HTML/Image_getter.i: HTML/Image_getter.cpp.i
+
+.PHONY : HTML/Image_getter.i
+
+# target to preprocess a source file
+HTML/Image_getter.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/Image_getter.cpp.i
+.PHONY : HTML/Image_getter.cpp.i
+
+HTML/Image_getter.s: HTML/Image_getter.cpp.s
+
+.PHONY : HTML/Image_getter.s
+
+# target to generate assembly for a file
+HTML/Image_getter.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/HTML/Image_getter.cpp.s
+.PHONY : HTML/Image_getter.cpp.s
+
+LinkedList/String_List.o: LinkedList/String_List.cpp.o
+
+.PHONY : LinkedList/String_List.o
+
+# target to build an object file
+LinkedList/String_List.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/LinkedList/String_List.cpp.o
+.PHONY : LinkedList/String_List.cpp.o
+
+LinkedList/String_List.i: LinkedList/String_List.cpp.i
+
+.PHONY : LinkedList/String_List.i
+
+# target to preprocess a source file
+LinkedList/String_List.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/LinkedList/String_List.cpp.i
+.PHONY : LinkedList/String_List.cpp.i
+
+LinkedList/String_List.s: LinkedList/String_List.cpp.s
+
+.PHONY : LinkedList/String_List.s
+
+# target to generate assembly for a file
+LinkedList/String_List.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/LinkedList/String_List.cpp.s
+.PHONY : LinkedList/String_List.cpp.s
+
+LinkedList/String_Node.o: LinkedList/String_Node.cpp.o
+
+.PHONY : LinkedList/String_Node.o
+
+# target to build an object file
+LinkedList/String_Node.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/LinkedList/String_Node.cpp.o
+.PHONY : LinkedList/String_Node.cpp.o
+
+LinkedList/String_Node.i: LinkedList/String_Node.cpp.i
+
+.PHONY : LinkedList/String_Node.i
+
+# target to preprocess a source file
+LinkedList/String_Node.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/LinkedList/String_Node.cpp.i
+.PHONY : LinkedList/String_Node.cpp.i
+
+LinkedList/String_Node.s: LinkedList/String_Node.cpp.s
+
+.PHONY : LinkedList/String_Node.s
+
+# target to generate assembly for a file
+LinkedList/String_Node.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/LinkedList/String_Node.cpp.s
+.PHONY : LinkedList/String_Node.cpp.s
+
+Recycle_Bin/Data.o: Recycle_Bin/Data.cpp.o
+
+.PHONY : Recycle_Bin/Data.o
+
+# target to build an object file
+Recycle_Bin/Data.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/Data.cpp.o
+.PHONY : Recycle_Bin/Data.cpp.o
+
+Recycle_Bin/Data.i: Recycle_Bin/Data.cpp.i
+
+.PHONY : Recycle_Bin/Data.i
+
+# target to preprocess a source file
+Recycle_Bin/Data.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/Data.cpp.i
+.PHONY : Recycle_Bin/Data.cpp.i
+
+Recycle_Bin/Data.s: Recycle_Bin/Data.cpp.s
+
+.PHONY : Recycle_Bin/Data.s
+
+# target to generate assembly for a file
+Recycle_Bin/Data.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/Data.cpp.s
+.PHONY : Recycle_Bin/Data.cpp.s
+
+Recycle_Bin/FileDownloader.o: Recycle_Bin/FileDownloader.cpp.o
+
+.PHONY : Recycle_Bin/FileDownloader.o
+
+# target to build an object file
+Recycle_Bin/FileDownloader.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/FileDownloader.cpp.o
+.PHONY : Recycle_Bin/FileDownloader.cpp.o
+
+Recycle_Bin/FileDownloader.i: Recycle_Bin/FileDownloader.cpp.i
+
+.PHONY : Recycle_Bin/FileDownloader.i
+
+# target to preprocess a source file
+Recycle_Bin/FileDownloader.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/FileDownloader.cpp.i
+.PHONY : Recycle_Bin/FileDownloader.cpp.i
+
+Recycle_Bin/FileDownloader.s: Recycle_Bin/FileDownloader.cpp.s
+
+.PHONY : Recycle_Bin/FileDownloader.s
+
+# target to generate assembly for a file
+Recycle_Bin/FileDownloader.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/FileDownloader.cpp.s
+.PHONY : Recycle_Bin/FileDownloader.cpp.s
+
+Recycle_Bin/HTML_Parser.o: Recycle_Bin/HTML_Parser.cpp.o
+
+.PHONY : Recycle_Bin/HTML_Parser.o
+
+# target to build an object file
+Recycle_Bin/HTML_Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/HTML_Parser.cpp.o
+.PHONY : Recycle_Bin/HTML_Parser.cpp.o
+
+Recycle_Bin/HTML_Parser.i: Recycle_Bin/HTML_Parser.cpp.i
+
+.PHONY : Recycle_Bin/HTML_Parser.i
+
+# target to preprocess a source file
+Recycle_Bin/HTML_Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/HTML_Parser.cpp.i
+.PHONY : Recycle_Bin/HTML_Parser.cpp.i
+
+Recycle_Bin/HTML_Parser.s: Recycle_Bin/HTML_Parser.cpp.s
+
+.PHONY : Recycle_Bin/HTML_Parser.s
+
+# target to generate assembly for a file
+Recycle_Bin/HTML_Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/HTML_Parser.cpp.s
+.PHONY : Recycle_Bin/HTML_Parser.cpp.s
+
+Recycle_Bin/HTTPDownloader.o: Recycle_Bin/HTTPDownloader.cpp.o
+
+.PHONY : Recycle_Bin/HTTPDownloader.o
+
+# target to build an object file
+Recycle_Bin/HTTPDownloader.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/HTTPDownloader.cpp.o
+.PHONY : Recycle_Bin/HTTPDownloader.cpp.o
+
+Recycle_Bin/HTTPDownloader.i: Recycle_Bin/HTTPDownloader.cpp.i
+
+.PHONY : Recycle_Bin/HTTPDownloader.i
+
+# target to preprocess a source file
+Recycle_Bin/HTTPDownloader.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/HTTPDownloader.cpp.i
+.PHONY : Recycle_Bin/HTTPDownloader.cpp.i
+
+Recycle_Bin/HTTPDownloader.s: Recycle_Bin/HTTPDownloader.cpp.s
+
+.PHONY : Recycle_Bin/HTTPDownloader.s
+
+# target to generate assembly for a file
+Recycle_Bin/HTTPDownloader.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/HTTPDownloader.cpp.s
+.PHONY : Recycle_Bin/HTTPDownloader.cpp.s
+
+Recycle_Bin/ImgDownloader.o: Recycle_Bin/ImgDownloader.cpp.o
+
+.PHONY : Recycle_Bin/ImgDownloader.o
+
+# target to build an object file
+Recycle_Bin/ImgDownloader.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/ImgDownloader.cpp.o
+.PHONY : Recycle_Bin/ImgDownloader.cpp.o
+
+Recycle_Bin/ImgDownloader.i: Recycle_Bin/ImgDownloader.cpp.i
+
+.PHONY : Recycle_Bin/ImgDownloader.i
+
+# target to preprocess a source file
+Recycle_Bin/ImgDownloader.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/ImgDownloader.cpp.i
+.PHONY : Recycle_Bin/ImgDownloader.cpp.i
+
+Recycle_Bin/ImgDownloader.s: Recycle_Bin/ImgDownloader.cpp.s
+
+.PHONY : Recycle_Bin/ImgDownloader.s
+
+# target to generate assembly for a file
+Recycle_Bin/ImgDownloader.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/ImgDownloader.cpp.s
+.PHONY : Recycle_Bin/ImgDownloader.cpp.s
+
+Recycle_Bin/Iterator.o: Recycle_Bin/Iterator.cpp.o
+
+.PHONY : Recycle_Bin/Iterator.o
+
+# target to build an object file
+Recycle_Bin/Iterator.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/Iterator.cpp.o
+.PHONY : Recycle_Bin/Iterator.cpp.o
+
+Recycle_Bin/Iterator.i: Recycle_Bin/Iterator.cpp.i
+
+.PHONY : Recycle_Bin/Iterator.i
+
+# target to preprocess a source file
+Recycle_Bin/Iterator.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/Iterator.cpp.i
+.PHONY : Recycle_Bin/Iterator.cpp.i
+
+Recycle_Bin/Iterator.s: Recycle_Bin/Iterator.cpp.s
+
+.PHONY : Recycle_Bin/Iterator.s
+
+# target to generate assembly for a file
+Recycle_Bin/Iterator.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/Iterator.cpp.s
+.PHONY : Recycle_Bin/Iterator.cpp.s
+
+Recycle_Bin/List.o: Recycle_Bin/List.cpp.o
+
+.PHONY : Recycle_Bin/List.o
+
+# target to build an object file
+Recycle_Bin/List.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/List.cpp.o
+.PHONY : Recycle_Bin/List.cpp.o
+
+Recycle_Bin/List.i: Recycle_Bin/List.cpp.i
+
+.PHONY : Recycle_Bin/List.i
+
+# target to preprocess a source file
+Recycle_Bin/List.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/List.cpp.i
+.PHONY : Recycle_Bin/List.cpp.i
+
+Recycle_Bin/List.s: Recycle_Bin/List.cpp.s
+
+.PHONY : Recycle_Bin/List.s
+
+# target to generate assembly for a file
+Recycle_Bin/List.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/List.cpp.s
+.PHONY : Recycle_Bin/List.cpp.s
+
+Recycle_Bin/Node.o: Recycle_Bin/Node.cpp.o
+
+.PHONY : Recycle_Bin/Node.o
+
+# target to build an object file
+Recycle_Bin/Node.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/Node.cpp.o
+.PHONY : Recycle_Bin/Node.cpp.o
+
+Recycle_Bin/Node.i: Recycle_Bin/Node.cpp.i
+
+.PHONY : Recycle_Bin/Node.i
+
+# target to preprocess a source file
+Recycle_Bin/Node.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/Node.cpp.i
+.PHONY : Recycle_Bin/Node.cpp.i
+
+Recycle_Bin/Node.s: Recycle_Bin/Node.cpp.s
+
+.PHONY : Recycle_Bin/Node.s
+
+# target to generate assembly for a file
+Recycle_Bin/Node.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Recycle_Bin/Node.cpp.s
+.PHONY : Recycle_Bin/Node.cpp.s
 
 main.o: main.cpp.o
 
@@ -243,12 +513,42 @@ help:
 	@echo "... CSV/CSV_Reader.o"
 	@echo "... CSV/CSV_Reader.i"
 	@echo "... CSV/CSV_Reader.s"
-	@echo "... HTML/Data.o"
-	@echo "... HTML/Data.i"
-	@echo "... HTML/Data.s"
-	@echo "... HTML/HTML_Parser.o"
-	@echo "... HTML/HTML_Parser.i"
-	@echo "... HTML/HTML_Parser.s"
+	@echo "... GUI/windowGUI.o"
+	@echo "... GUI/windowGUI.i"
+	@echo "... GUI/windowGUI.s"
+	@echo "... HTML/Image_getter.o"
+	@echo "... HTML/Image_getter.i"
+	@echo "... HTML/Image_getter.s"
+	@echo "... LinkedList/String_List.o"
+	@echo "... LinkedList/String_List.i"
+	@echo "... LinkedList/String_List.s"
+	@echo "... LinkedList/String_Node.o"
+	@echo "... LinkedList/String_Node.i"
+	@echo "... LinkedList/String_Node.s"
+	@echo "... Recycle_Bin/Data.o"
+	@echo "... Recycle_Bin/Data.i"
+	@echo "... Recycle_Bin/Data.s"
+	@echo "... Recycle_Bin/FileDownloader.o"
+	@echo "... Recycle_Bin/FileDownloader.i"
+	@echo "... Recycle_Bin/FileDownloader.s"
+	@echo "... Recycle_Bin/HTML_Parser.o"
+	@echo "... Recycle_Bin/HTML_Parser.i"
+	@echo "... Recycle_Bin/HTML_Parser.s"
+	@echo "... Recycle_Bin/HTTPDownloader.o"
+	@echo "... Recycle_Bin/HTTPDownloader.i"
+	@echo "... Recycle_Bin/HTTPDownloader.s"
+	@echo "... Recycle_Bin/ImgDownloader.o"
+	@echo "... Recycle_Bin/ImgDownloader.i"
+	@echo "... Recycle_Bin/ImgDownloader.s"
+	@echo "... Recycle_Bin/Iterator.o"
+	@echo "... Recycle_Bin/Iterator.i"
+	@echo "... Recycle_Bin/Iterator.s"
+	@echo "... Recycle_Bin/List.o"
+	@echo "... Recycle_Bin/List.i"
+	@echo "... Recycle_Bin/List.s"
+	@echo "... Recycle_Bin/Node.o"
+	@echo "... Recycle_Bin/Node.i"
+	@echo "... Recycle_Bin/Node.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

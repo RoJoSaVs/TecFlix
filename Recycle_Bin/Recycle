@@ -7,3 +7,619 @@
 
     //        QImage picture;
     //        picture.load("/home/ronny/CLionProjects/TecFlix/CSV/GohanCanva.jpg");
+
+
+
+//    String_List *test = new String_List();
+//    read(test);
+//    test->insert_first("hola");
+//    test->display_inverse();
+
+####################################################
+Media player
+#include <stdio.h>
+#include <stdlib.h>
+#include <vlc/vlc.h>
+#include <zconf.h>
+
+
+//    QGraphicsScene scene;
+//    QGraphicsView view(&scene);
+//    QUrl url ("https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_UX182_CR0,0,182,268_AL_.jpg");
+//    QUrl url1 ("https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg");
+//    QImage image(url.toLocalFile());
+//    QGraphicsPixmapItem item(QPixmap(url.toLocalFile()));
+//    item.setScale(0.5);
+//    item.setPos(0,0);
+//    scene.addItem(&item);
+//    view.showMaximized();
+//    return app.exec();
+
+
+//    libvlc_instance_t *my_instance;
+//    libvlc_media_t *my_media_file;
+//    libvlc_media_player_t *my_player;
+//
+//    my_instance = libvlc_new(0, nullptr);
+//    my_media_file = libvlc_media_new_path(my_instance, "/home/ronny/Downloads/videotest.mp4");
+//    // Create player
+//    my_player = libvlc_media_player_new_from_media(my_media_file);
+//
+//// Start playing
+//    libvlc_media_release(my_media_file);
+//    libvlc_media_player_play(my_player);
+//    sleep(180); /* Wait for 180 seconds */
+//    libvlc_media_player_release(my_player);
+//    libvlc_release(my_instance);
+//    if(my_instance == nullptr) {
+//        printf("There was an error initializing VLC\n");
+//        exit(1);
+//    } else {
+//        printf("VLC initialized successfully\n");
+//    }
+
+#########################################################
+#include "opencv2/highgui/highgui.hpp"
+// highgui - an interface to video and image capturing.
+
+#include
+// The header files for performing input and output.
+
+using namespace cv;
+// Namespace where all the C++ OpenCV functionality resides.
+
+using namespace std;
+// For input output operations.
+
+
+int main()
+{
+    VideoCapture cap("Bumpy.mp4");
+    // cap is the object of class video capture that tries to capture Bumpy.mp4
+    if ( !cap.isOpened() )  // isOpened() returns true if capturing has been initialized.
+    {
+        cout << "Cannot open the video file. \n";
+        return -1;
+    }
+
+    double fps = cap.get(CV_CAP_PROP_FPS); //get the frames per seconds of the video
+    // The function get is used to derive a property from the element.
+    // Example:
+    // CV_CAP_PROP_POS_MSEC :  Current Video capture timestamp.
+    // CV_CAP_PROP_POS_FRAMES : Index of the next frame.
+
+    namedWindow("A_good_name",CV_WINDOW_AUTOSIZE); //create a window called "MyVideo"
+    // first argument: name of the window.
+    // second argument: flag- types:
+    // WINDOW_NORMAL : The user can resize the window.
+    // WINDOW_AUTOSIZE : The window size is automatically adjusted to fitvthe displayed image() ), and you cannot change the window size manually.
+    // WINDOW_OPENGL : The window will be created with OpenGL support.
+
+    while(1)
+    {
+        Mat frame;
+        // Mat object is a basic image container. frame is an object of Mat.
+
+        if (!cap.read(frame)) // if not success, break loop
+        // read() decodes and captures the next frame.
+        {
+            cout<<"\n Cannot read the video file. \n";
+            break;
+        }
+
+        imshow("A_good_name", frame);
+        // first argument: name of the window.
+        // second argument: image to be shown(Mat object).
+
+        if(waitKey(30) == 27) // Wait for 'esc' key press to exit
+        {
+            break;
+        }
+    }
+
+    return 0;
+}
+// END OF PROGRAM
+
+##############################################################
+Daniel's Code
+
+CURL *curl;
+  CURLcode res;
+  std::string readBuffer;
+
+  curl = curl_easy_init();
+  if(curl) {
+    curl_easy_setopt(curl, CURLOPT_URL, "https://www.imdb.com/title/tt0830515/?ref_=fn_tt_tt_1");
+    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
+    curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
+    res = curl_easy_perform(curl);
+    curl_easy_cleanup(curl);
+
+  }
+
+  int index = 0;
+    std::string line;
+
+
+    stringstream sss(readBuffer);
+    while (true and index<=1500) {
+        getline(sss,line,'\n');
+        if(index>1340){
+        	if (line.find("poster") != string::npos) {
+        		cout<<"Found";
+        		for(int i=0;i<3;i++){
+        			getline(sss,line,'\n');
+        		}
+	        	break;
+	        }
+        }
+        index++;
+    }
+    cout<<endl;
+    std::string token = line.substr(0, line.find(".jpg"));
+    std::string formated = token.substr(5, token.find(".jpg"));
+    formated = formated+".jpg";
+    cout<<formated<<endl;
+
+    const char *url = formated.c_str();
+
+    URL DE LA IMAGEN
+////////////////////////////////////////////////////////////////////////////////////
+
+    CURL *image;
+        CURLcode imgresult;
+        FILE *fp = nullptr;
+        //const char *url = "https://m.media-amazon.com/images/M/MV5BOWQ1MDE1NzgtNTQ4OC00ZjliLTllZDAtN2IyOTVmMTc5YjUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg";
+        image = curl_easy_init();
+        if (image)
+        {
+            // Open file
+            fp = fopen("img.jpg", "wb");
+            if (fp == NULL) cout << "File cannot be opened";
+
+            curl_easy_setopt(image, CURLOPT_WRITEFUNCTION, NULL);
+            curl_easy_setopt(image, CURLOPT_WRITEDATA, fp);
+            curl_easy_setopt(image, CURLOPT_URL, url);
+            curl_easy_setopt(image, CURLOPT_FOLLOWLOCATION, 1);
+            curl_easy_setopt(image, CURLOPT_USERAGENT, "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36");
+            // Grab image
+            imgresult = curl_easy_perform(image);
+            if (imgresult)
+                cout << "Cannot grab the image!\n";
+        }
+        // Clean up the resources
+        curl_easy_cleanup(image);
+        // Close the file
+        fclose(fp);
+        system("pause");
+
+        DESCARGA LA IMAGEN
+############################################################################
+
+
+//    QGraphicsPixmapItem item1((QPixmap(dir1)));
+    QPixmap item1(dir1);
+    QPixmap item2(dir2);
+//    l.setPixmap(item1.scaled(100,200,Qt::AspectRatioMode));
+//    QGraphicsPixmapItem item2((QPixmap(dir2)));
+    QGraphicsPixmapItem item3((QPixmap(dir3)));
+    QGraphicsPixmapItem item4((QPixmap(dir4)));
+    QGraphicsPixmapItem item5((QPixmap(dir5)));
+    QGraphicsPixmapItem item6((QPixmap(dir6)));
+    QGraphicsPixmapItem item7((QPixmap(dir7)));
+    QGraphicsPixmapItem item8((QPixmap(dir8)));
+    QGraphicsPixmapItem item9((QPixmap(dir9)));
+
+//    item1.setScale(0.25);
+//    item1.setPos(-1000,-700);
+
+//    item2.setScale(0.25);
+//    item2.setPos(-1000,-500);
+
+    item3.setScale(0.25);
+    item3.setPos(-1000,-300);
+
+    item4.setScale(0.1);
+    item4.setPos(-500,-700);
+
+    item5.setScale(0.25);
+    item5.setPos(-500,-500);
+
+    item6.setScale(0.25);
+    item6.setPos(-500,-300);
+
+    item7.setScale(0.25);
+    item7.setPos(0,-700);
+
+    item8.setScale(0.25);
+    item8.setPos(0,-500);
+
+    item9.setScale(0.25);
+    item9.setPos(0,-300);
+
+//    scene.addItem(l);
+//    scene.addPixmap(item1.scaled(200,300,Qt::AspectRatioMode()));
+//    scene.addPixmap(item2.scaled(200,300,Qt::AspectRatioMode()));
+    QVBoxLayout * layout = new QVBoxLayout();
+    QLabel * Label = new QLabel();
+    QPushButton * Button = new QPushButton();
+    Label->setPixmap(item1.scaled(200,300,Qt::AspectRatioMode()));
+    layout->addWidget(Label);
+    layout->addWidget(Button);/***/
+//    scene.addItem(&item2);
+//    scene.addItem(&item3);
+//    scene.addItem(&item4);
+//    scene.addItem(&item5);
+//    scene.addItem(&item6);
+//    scene.addItem(&item7);
+//    scene.addItem(&item8);
+//    scene.addItem(&item9);
+    w.setLayout(layout);
+    w.showMaximized();
+//    view.showMaximized();
+    return app.exec();
+}
+#######################################################################################
+Johnathan's Code
+/****************************************************************************
+**
+** Copyright (C) 2009 Nokia Corporation and/or its subsidiary(-ies).
+** All rights reserved.
+** Contact: Nokia Corporation (qt-info@nokia.com)
+**
+** This file is part of the examples of the Qt Toolkit.
+**
+** $QT_BEGIN_LICENSE:LGPL$
+** Commercial Usage
+** Licensees holding valid Qt Commercial licenses may use this file in
+** accordance with the Qt Commercial License Agreement provided with the
+** Software or, alternatively, in accordance with the terms contained in
+** a written agreement between you and Nokia.
+**
+** GNU Lesser General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU Lesser
+** General Public License version 2.1 as published by the Free Software
+** Foundation and appearing in the file LICENSE.LGPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU Lesser General Public License version 2.1 requirements
+** will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+**
+** In addition, as a special exception, Nokia gives you certain additional
+** rights.  These rights are described in the Nokia Qt LGPL Exception
+** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.
+**
+** GNU General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU
+** General Public License version 3.0 as published by the Free Software
+** Foundation and appearing in the file LICENSE.GPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU General Public License version 3.0 requirements will be
+** met: http://www.gnu.org/copyleft/gpl.html.
+**
+** If you have questions regarding the use of this file, please contact
+** Nokia at qt-info@nokia.com.
+** $QT_END_LICENSE$
+**
+****************************************************************************/
+
+#include <QCoreApplication>
+#include <QFile>
+#include <QFileInfo>
+#include <QList>
+#include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QStringList>
+#include <QTimer>
+#include <QUrl>
+
+#include <stdio.h>
+
+class DownloadManager: public QObject
+{
+    Q_OBJECT
+    QNetworkAccessManager manager;
+    QList<QNetworkReply *> currentDownloads;
+
+public:
+    DownloadManager();
+    void doDownload(const QUrl &url);
+    QString saveFileName(const QUrl &url);
+    bool saveToDisk(const QString &filename, QIODevice *data);
+
+public slots:
+    void execute();
+    void downloadFinished(QNetworkReply *reply);
+};
+
+DownloadManager::DownloadManager()
+{
+    connect(&manager, SIGNAL(finished(QNetworkReply*)),
+            SLOT(downloadFinished(QNetworkReply*)));
+}
+
+void DownloadManager::doDownload(const QUrl &url)
+{
+    QNetworkRequest request(url);
+    QNetworkReply *reply = manager.get(request);
+
+    currentDownloads.append(reply);
+}
+
+QString DownloadManager::saveFileName(const QUrl &url)
+{
+    QString path = url.path();
+    QString basename = QFileInfo(path).fileName();
+
+    if (basename.isEmpty())
+        basename = "download";
+
+    if (QFile::exists(basename)) {
+        // already exists, don't overwrite
+        int i = 0;
+        basename += '.';
+        while (QFile::exists(basename + QString::number(i)))
+            ++i;
+
+        basename += QString::number(i);
+    }
+
+    return basename;
+}
+
+bool DownloadManager::saveToDisk(const QString &filename, QIODevice *data)
+{
+    QFile file(filename);
+    if (!file.open(QIODevice::WriteOnly)) {
+        fprintf(stderr, "Could not open %s for writing: %s\n",
+                qPrintable(filename),
+                qPrintable(file.errorString()));
+        return false;
+    }
+
+    file.write(data->readAll());
+    file.close();
+
+    return true;
+}
+
+void DownloadManager::execute()
+{
+    QStringList args = QCoreApplication::instance()->arguments();
+    args.takeFirst();           // skip the first argument, which is the program's name
+    if (args.isEmpty()) {
+        printf("Qt Download example - downloads all URLs in parallel\n"
+               "Usage: download url1 [url2... urlN]\n"
+               "\n"
+               "Downloads the URLs passed in the command-line to the local directory\n"
+               "If the target file already exists, a .0, .1, .2, etc. is appended to\n"
+               "differentiate.\n");
+        QCoreApplication::instance()->quit();
+        return;
+    }
+
+    foreach (QString arg, args) {
+        QUrl url = QUrl::fromEncoded(arg.toLocal8Bit());
+        doDownload(url);
+    }
+}
+
+void DownloadManager::downloadFinished(QNetworkReply *reply)
+{
+    QUrl url = reply->url();
+    if (reply->error()) {
+        fprintf(stderr, "Download of %s failed: %s\n",
+                url.toEncoded().constData(),
+                qPrintable(reply->errorString()));
+    } else {
+        QString filename = saveFileName(url);
+        if (saveToDisk(filename, reply))
+            printf("Download of %s succeded (saved to %s)\n",
+                   url.toEncoded().constData(), qPrintable(filename));
+    }
+
+    currentDownloads.removeAll(reply);
+    reply->deleteLater();
+
+    if (currentDownloads.isEmpty())
+        // all downloads finished
+        QCoreApplication::instance()->quit();
+}
+
+int main(int argc, char **argv)
+{
+    QCoreApplication app(argc, argv);
+
+    DownloadManager manager;
+    QTimer::singleShot(0, &manager, SLOT(execute()));
+
+    app.exec();
+}
+
+#include "main.moc"
+##########################################################################
+//Trying to show interface first strike//
+
+/*#include <QApplication>
+#include <QtGui>
+#include <QtCore>
+#include <QtNetwork/QNetworkAccessManager>
+#include <QUrl>
+#include <QDebug>
+#include <QImageReader>
+#include <QGraphicsScene>
+#include <QBoxLayout>
+#include <QtWidgets/QGraphicsView>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QGraphicsPixmapItem>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+
+using namespace std;
+
+int main(int argc, char **argv) {
+//    String_List *test = new String_List();
+//    read(test);
+//    test->display_inverse();
+    QApplication app(argc, argv);
+    QWidget *window;
+//    QGraphicsScene scene;
+//    QGraphicsView view(&scene);
+    QString dir1 = "/home/ronny/CLionProjects/TecFlix/CSV/Avatar.jpg";
+    QString dir2 = "/home/ronny/CLionProjects/TecFlix/CSV/piratas.jpg";
+    QString dir3 = "/home/ronny/CLionProjects/TecFlix/CSV/Avengers.jpg";
+    QString dir4 = "/home/ronny/CLionProjects/TecFlix/CSV/AvengersUltron.jpeg";
+    QString dir5 = "/home/ronny/CLionProjects/TecFlix/CSV/Deadpool.jpg";
+    QString dir6 = "/home/ronny/CLionProjects/TecFlix/CSV/DrStrange.jpg";
+    QString dir7 = "/home/ronny/CLionProjects/TecFlix/CSV/Gravity.jpg";
+    QString dir8 = "/home/ronny/CLionProjects/TecFlix/CSV/Guardians.jpg";
+    QString dir9 = "/home/ronny/CLionProjects/TecFlix/CSV/Martian.jpg";
+    QPixmap item1(dir1);
+    QPixmap item2(dir2);
+    QPixmap item3((QPixmap(dir3)));
+    QPixmap item4((QPixmap(dir4)));
+    QPixmap item5((QPixmap(dir5)));
+    QPixmap item6((QPixmap(dir6)));
+    QPixmap item7((QPixmap(dir7)));
+    QPixmap item8((QPixmap(dir8)));
+    QPixmap item9((QPixmap(dir9)));
+    //QGridLayout
+    QGridLayout *gui = new QGridLayout(window);
+    //QVBoxLayout
+    QVBoxLayout master;
+    QVBoxLayout layout;
+    QVBoxLayout layout2;
+    master.addItem(&layout);
+    master.addItem(&layout2);
+
+    //Labels
+    QLabel Label;
+    QLabel Label2;
+    QLabel Label3;
+
+    //Buttons
+    QPushButton Button1;
+    Button1.setText("Avatar");
+    Button1.resize(20,20);
+//    QPushButton *Button2 = new QPushButton("Soy");
+//    QPushButton *Button3 = new QPushButton("German");
+//    QPushButton *Button4 = new QPushButton("Que");
+//    QPushButton *Button5 = new QPushButton("Pedo");
+
+    //Setting Items on Interface
+    Label.setPixmap(item1.scaled(200,300,Qt::AspectRatioMode()));
+    Label2.setPixmap(item2.scaled(200,300,Qt::AspectRatioMode()));
+    Label3.setPixmap(item3.scaled(200,300,Qt::AspectRatioMode()));
+//    layout.addWidget(&Label,0,Qt::Alignment());
+//    layout.insertWidget(0,&Label);
+//    layout.insertWidget(1,&Label2);
+//    layout.insertWidget(0,&Button1);
+//    layout.addWidget(&Button1);
+//    layout->addWidget(Button2);
+//    layout->addWidget(Button3);
+//    layout->addWidget(Button4);
+//    layout->addWidget(Button5);
+
+    //Loading main Window
+//    w.setLayout(&master);
+//    w.resize(1300,600);
+    window->showMaximized();
+    return app.exec();
+}*/
+############################################################################
+//
+//    QString dir1 = "/home/ronny/CLionProjects/TecFlix/Pictures/img1.jpg";
+//    QString dir2 = "/home/ronny/CLionProjects/TecFlix/Pictures/img2.jpg";
+//    QString dir3 = "/home/ronny/CLionProjects/TecFlix/Pictures/img3.jpg";
+//    QString dir4 = "/home/ronny/CLionProjects/TecFlix/Pictures/img4.jpg";
+//    QString dir5 = "/home/ronny/CLionProjects/TecFlix/Pictures/img5.jpg";
+//    QString dir6 = "/home/ronny/CLionProjects/TecFlix/Pictures/img6.jpg";
+//    QString dir7 = "/home/ronny/CLionProjects/TecFlix/Pictures/img7.jpg";
+//    QString dir8 = "/home/ronny/CLionProjects/TecFlix/Pictures/img8.jpg";
+//    QString dir9 = "/home/ronny/CLionProjects/TecFlix/Pictures/img9.jpg";
+//    QString dir0 = "/home/ronny/CLionProjects/TecFlix/Pictures/img10.jpg";
+//
+//    QPushButton* button1 = new QPushButton;
+//    QPixmap pm1(dir1);
+//    QIcon ButtonIcon1(pm1);
+//    button1->setIcon(ButtonIcon1);
+//    button1->setIconSize(pm1.scaled(200,300).size());
+//
+//    QPushButton* button2 = new QPushButton;
+//    QPixmap pm2(dir2);
+//    QIcon ButtonIcon2(pm2);
+//    button2->setIcon(ButtonIcon2);
+//    button2->setIconSize(pm2.scaled(200,300).size());
+//
+//    QPushButton* button3 = new QPushButton;
+//    QPixmap pm3(dir3);
+//    QIcon ButtonIcon3(pm3);
+//    button3->setIcon(ButtonIcon3);
+//    button3->setIconSize(pm3.scaled(200,300).size());
+//
+//    QPushButton* button4 = new QPushButton;
+//    QPixmap pm4(dir4);
+//    QIcon ButtonIcon4(pm4);
+//    button4->setIcon(ButtonIcon4);
+//    button4->setIconSize(pm4.scaled(200,300).size());
+//
+//    QPushButton* button5 = new QPushButton;
+//    QPixmap pm5(dir5);
+//    QIcon ButtonIcon5(pm5);
+//    button5->setIcon(ButtonIcon5);
+//    button5->setIconSize(pm5.scaled(200,300).size());
+//
+//    QPushButton* button6 = new QPushButton;
+//    QPixmap pm6(dir6);
+//    QIcon ButtonIcon6(pm6);
+//    button6->setIcon(ButtonIcon6);
+//    button6->setIconSize(pm6.scaled(200,300).size());
+//
+//    QPushButton* button7 = new QPushButton;
+//    QPixmap pm7(dir7);
+//    QIcon ButtonIcon7(pm7);
+//    button7->setIcon(ButtonIcon7);
+//    button7->setIconSize(pm7.scaled(200,300).size());
+//
+//    QPushButton* button8 = new QPushButton;
+//    QPixmap pm8(dir8);
+//    QIcon ButtonIcon8(pm8);
+//    button8->setIcon(ButtonIcon8);
+//    button8->setIconSize(pm8.scaled(200,300).size());
+//
+//    QPushButton* button9 = new QPushButton;
+//    QPixmap pm9(dir9);
+//    QIcon ButtonIcon9(pm9);
+//    button9->setIcon(ButtonIcon9);
+//    button9->setIconSize(pm9.scaled(200,300).size());
+//
+//    QPushButton* button0 = new QPushButton;
+//    QPixmap pm0(dir0);
+//    QIcon ButtonIcon0(pm0);
+//    button0->setIcon(ButtonIcon0);
+//    button0->setIconSize(pm0.scaled(200,300).size());
+//
+//
+//
+//    QPushButton *buttonBack = new QPushButton("<<");
+//    QPushButton *buttonNext = new QPushButton(">>");
+//    QLabel *page = new QLabel();
+//    page->setText("          "+QString::number(pageNum,10));
+//
+//    horizontal->addWidget(buttonBack);
+//    horizontal->addWidget(page);
+//    horizontal->addWidget(buttonNext);
+//
+//    layout->addWidget(button1,0,0);
+//    layout->addWidget(button2,0,1);
+//    layout->addWidget(button3,0,2);
+//    layout->addWidget(button4,0,3);
+//    layout->addWidget(button5,0,4);
+//    layout->addWidget(button6,1,0);
+//    layout->addWidget(button7,1,1);
+//    layout->addWidget(button8,1,2);
+//    layout->addWidget(button9,1,3);
+//    layout->addWidget(button0,1,4);
+//    layout->addLayout(horizontal,2,2);
+#################################################################

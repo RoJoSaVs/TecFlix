@@ -41,11 +41,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CSV" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Recycle_Bin" />
+      <recent name="$PROJECT_DIR$/HTML" />
+      <recent name="$PROJECT_DIR$/Imagenes" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CSV" />
+      <recent name="$PROJECT_DIR$/GUI" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -84,6 +90,27 @@
       <workItem from="1567295070880" duration="9320000" />
       <workItem from="1567380141400" duration="3349000" />
       <workItem from="1567908752980" duration="12138000" />
+      <workItem from="1567987941109" duration="13115000" />
+      <workItem from="1568165410587" duration="5434000" />
+      <workItem from="1568790951855" duration="161000" />
+      <workItem from="1568850995807" duration="392000" />
+      <workItem from="1568874580946" duration="10783000" />
+      <workItem from="1569022935109" duration="314000" />
+      <workItem from="1569055992740" duration="5992000" />
+      <workItem from="1569119570175" duration="2965000" />
+      <workItem from="1569294738247" duration="4310000" />
+      <workItem from="1569367021813" duration="7607000" />
+      <workItem from="1569475451926" duration="1774000" />
+      <workItem from="1569512190861" duration="9260000" />
+      <workItem from="1569538896269" duration="6675000" />
+      <workItem from="1569813156431" duration="8379000" />
+      <workItem from="1569982906454" duration="7990000" />
+      <workItem from="1570078596108" duration="9589000" />
+      <workItem from="1570147530431" duration="4935000" />
+      <workItem from="1570180497007" duration="6762000" />
+      <workItem from="1570217542496" duration="15886000" />
+      <workItem from="1570248446371" duration="10568000" />
+      <workItem from="1570276526068" duration="4519000" />
     </task>
     <servers />
   </component>

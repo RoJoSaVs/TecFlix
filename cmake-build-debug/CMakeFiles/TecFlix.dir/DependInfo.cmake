@@ -5,8 +5,18 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ronny/CLionProjects/TecFlix/CSV/CSV_Reader.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/CSV/CSV_Reader.cpp.o"
-  "/home/ronny/CLionProjects/TecFlix/HTML/Data.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/HTML/Data.cpp.o"
-  "/home/ronny/CLionProjects/TecFlix/HTML/HTML_Parser.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/HTML/HTML_Parser.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/GUI/windowGUI.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/GUI/windowGUI.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/HTML/Image_getter.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/HTML/Image_getter.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/LinkedList/String_List.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/LinkedList/String_List.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/LinkedList/String_Node.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/LinkedList/String_Node.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/Recycle_Bin/Data.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Recycle_Bin/Data.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/Recycle_Bin/FileDownloader.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Recycle_Bin/FileDownloader.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/Recycle_Bin/HTML_Parser.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Recycle_Bin/HTML_Parser.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/Recycle_Bin/HTTPDownloader.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Recycle_Bin/HTTPDownloader.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/Recycle_Bin/ImgDownloader.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Recycle_Bin/ImgDownloader.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/Recycle_Bin/Iterator.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Recycle_Bin/Iterator.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/Recycle_Bin/List.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Recycle_Bin/List.cpp.o"
+  "/home/ronny/CLionProjects/TecFlix/Recycle_Bin/Node.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Recycle_Bin/Node.cpp.o"
   "/home/ronny/CLionProjects/TecFlix/main.cpp" "/home/ronny/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
